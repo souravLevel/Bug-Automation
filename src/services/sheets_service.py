@@ -32,13 +32,13 @@ class SheetsService:
             # Prepare headers and rows
             headers = [
                 'Bug Key', 'Summary', 'Status', 'Priority', 
-                'Created', 'Reporter', 'Assignee'
+                'Created', 'Reporter', 'Assignee', 'Labels'
             ]
             
             rows = [[
                 bug['Key'], bug['Summary'], bug['Status'], 
                 bug['Priority'], bug['Created'], bug['Reporter'], 
-                bug['Assignee']
+                bug['Assignee'], bug['Labels']
             ] for bug in bug_data]
             
             # Combine headers and rows

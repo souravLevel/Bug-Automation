@@ -1,5 +1,6 @@
 import sys
 import os
+from datetime import datetime
 from src.utils.logger import Logger
 
 class JiraService:
@@ -52,6 +53,22 @@ class JiraService:
             self.logger.error(f"Comprehensive Jira connection failure: {e}")
             raise
 
+    def _format_date(self, date_string):
+        """
+        Format a date string from Jira to dd-mm-yyyy format
+        
+        :param date_string: Date string from Jira (format: YYYY-MM-DDTHH:MM:SS.000+0000)
+        :return: Formatted date string (dd-mm-yyyy)
+        """
+        try:
+            # Parse the Jira date format (ISO format with timezone)
+            date_obj = datetime.strptime(date_string.split('.')[0], '%Y-%m-%dT%H:%M:%S')
+            # Format to dd-mm-yyyy
+            return date_obj.strftime('%d-%m-%Y')
+        except Exception as e:
+            self.logger.warning(f"Error formatting date '{date_string}': {e}")
+            return date_string
+            
     def get_bugs(self, jql_query):
         """
         Retrieve bugs from Jira based on JQL query
@@ -68,9 +85,10 @@ class JiraService:
                     'Summary': bug.fields.summary,
                     'Status': bug.fields.status.name,
                     'Priority': bug.fields.priority.name,
-                    'Created': str(bug.fields.created),
+                    'Created': self._format_date(bug.fields.created),
                     'Reporter': bug.fields.reporter.displayName if bug.fields.reporter else 'Unassigned',
-                    'Assignee': bug.fields.assignee.displayName if bug.fields.assignee else 'Unassigned'
+                    'Assignee': bug.fields.assignee.displayName if bug.fields.assignee else 'Unassigned',
+                    'Labels': ', '.join(bug.fields.labels) if hasattr(bug.fields, 'labels') and bug.fields.labels else ''
                 }
                 for bug in bugs
             ]
