@@ -155,3 +155,8 @@
 2025-03-27 14:42:44,611 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
 2025-03-27 14:42:44,621 - __main__ - INFO - Bug export scheduled every 4 hours
 2025-03-27 14:42:47,377 - src.services.sheets_service - INFO - Successfully exported 22 bugs at 2025-03-27 14:42:47.377814
+2025-03-27 15:51:54,778 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 15:51:55,153 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 15:51:55,808 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 15:51:55,844 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 15:51:59,090 - src.services.sheets_service - INFO - Successfully exported 23 bugs at 2025-03-27 15:51:59.090220
