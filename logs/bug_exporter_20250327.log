@@ -1,0 +1,42 @@
+2025-03-27 13:09:19,745 - src.services.jira_service - ERROR - Jira connection failed: name 'JIRA' is not defined
+2025-03-27 13:09:19,745 - src.services.jira_service - ERROR - Fallback authentication failed: name 'JIRA' is not defined
+2025-03-27 13:09:19,745 - src.services.jira_service - ERROR - Comprehensive Jira connection failure: name 'JIRA' is not defined
+2025-03-27 13:56:43,726 - src.services.jira_service - ERROR - Jira connection failed: name 'JIRA' is not defined
+2025-03-27 13:56:43,726 - src.services.jira_service - ERROR - Fallback authentication failed: name 'JIRA' is not defined
+2025-03-27 13:56:43,727 - src.services.jira_service - ERROR - Comprehensive Jira connection failure: name 'JIRA' is not defined
+2025-03-27 14:00:53,269 - src.services.jira_service - ERROR - Failed to import JIRA module: No module named 'imghdr'
+2025-03-27 14:00:53,269 - src.services.jira_service - ERROR - Comprehensive Jira connection failure: The 'jira' package is required but could not be imported. Please ensure it's installed correctly. Error: No module named 'imghdr'
+2025-03-27 14:02:15,158 - src.services.jira_service - ERROR - Failed to import JIRA module: No module named 'imghdr'
+2025-03-27 14:02:15,158 - src.services.jira_service - ERROR - Comprehensive Jira connection failure: The 'jira' package is required but could not be imported. Please ensure it's installed correctly. Error: No module named 'imghdr'
+2025-03-27 14:04:00,587 - src.services.jira_service - WARNING - imghdr module not found, using mock implementation
+2025-03-27 14:04:00,588 - src.services.jira_service - ERROR - Failed to load mock imghdr module: No module named 'imghdr_fix'
+2025-03-27 14:04:00,588 - src.services.jira_service - ERROR - Comprehensive Jira connection failure: No module named 'imghdr_fix'
+2025-03-27 14:05:00,934 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:05:01,333 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:05:02,044 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:05:02,046 - src.services.sheets_service - ERROR - Google Sheets connection failed: Service account info was not in the expected format, missing fields client_email, token_uri.
+2025-03-27 14:12:47,143 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:12:47,397 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:12:48,078 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:12:48,124 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 14:12:53,286 - src.services.sheets_service - ERROR - Error exporting to Google Sheets: <HttpError 403 when requesting https://sheets.googleapis.com/v4/spreadsheets/1u_Cw_n844rmtJzDrMRh6tTJHyateLSNiFiuas52mNDU/values/Sheet1%21A1?valueInputOption=RAW&alt=json returned "The caller does not have permission". Details: "The caller does not have permission">
+2025-03-27 14:14:40,920 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:14:41,184 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:14:41,924 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:14:41,933 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 14:14:46,250 - src.services.sheets_service - INFO - Successfully exported 100 bugs at 2025-03-27 14:14:46.250120
+2025-03-27 14:15:47,296 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:15:47,546 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:15:48,413 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:15:48,421 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 14:15:51,895 - src.services.sheets_service - INFO - Successfully exported 100 bugs at 2025-03-27 14:15:51.895545
+2025-03-27 14:17:12,741 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:17:12,994 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:17:13,906 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:17:13,917 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 14:17:18,773 - src.services.sheets_service - INFO - Successfully exported 100 bugs at 2025-03-27 14:17:18.773699
+2025-03-27 14:17:59,296 - src.services.jira_service - INFO - Added imghdr module patch to sys.modules
+2025-03-27 14:17:59,546 - src.services.jira_service - INFO - Successfully imported JIRA module
+2025-03-27 14:18:00,192 - src.services.jira_service - INFO - Successfully connected to JIRA using basic auth
+2025-03-27 14:18:00,199 - __main__ - INFO - Bug export scheduled every 4 hours
+2025-03-27 14:18:05,007 - src.services.sheets_service - INFO - Successfully exported 100 bugs at 2025-03-27 14:18:05.007128
